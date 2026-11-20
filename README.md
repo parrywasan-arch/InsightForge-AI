@@ -50,14 +50,6 @@ InsightForge-AI/
 └── src/
     ├── config.py            # Environment variables, model defaults, and path settings
     ├── data_engine.py       # Pandas data loading, KPI computation, and multi-rule filtering
-
-## Quick Start (Local Setup)
-
-To run **InsightForge AI** locally, clone the repository (`git clone https://github.com/parrywasan-arch/InsightForge-AI.git && cd InsightForge-AI`), create and activate a Python virtual environment (`python -m venv venv` followed by `.\venv\Scripts\Activate.ps1` on Windows or `source venv/bin/activate` on macOS/Linux), install all required packages via `pip install -r requirements.txt`, optionally configure your `OPENAI_API_KEY` in a `.env` file or directly inside the app sidebar (or leave it blank for zero-crash **Local Mode**), and launch the workspace with `streamlit run main.py` at `http://localhost:8501`.
-git add README.md
-git commit -m "Condense Quick Start section in README"
-git push
-
     ├── rag_engine.py        # Dynamic PDF ingestion, FAISS indexing, hybrid retrieval, streaming & memory
     ├── visuals.py           # Plotly chart builders for trends, demographics, and correlations
     └── evaluator.py         # 4-pillar LLM-as-a-Judge & local heuristic fallback evaluator
